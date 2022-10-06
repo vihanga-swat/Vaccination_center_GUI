@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #b3ffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutX="38.0" layoutY="41.0" prefHeight="510.0" prefWidth="519.0" style="-fx-background-color: #b3ccff;">
+         <children>
+            <Label layoutX="82.0" layoutY="14.0" text="Vaccination Center">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="clearbtn" layoutX="145.0" layoutY="439.0" mnemonicParsing="false" onAction="#clickc" style="-fx-background-color: #80ffcc;" text="Clear All">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="receiptbtn" layoutX="280.0" layoutY="439.0" mnemonicParsing="false" onAction="#next" style="-fx-background-color: #80ffcc;" text="Submit">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="select" layoutX="233.0" layoutY="350.0" onAction="#vaccinetype" prefHeight="25.0" prefWidth="186.0" promptText="Select Vaccine Type" visibleRowCount="3" />
+            <Label layoutX="118.0" layoutY="353.0" text="Vaccine Type">
+               <font>
+                  <Font name="Maiandra GD" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="lastname" layoutX="272.0" layoutY="212.0" promptText="Enter Last Name" style="-fx-background-color: #b3ffff;" />
+      <TextField fx:id="city" layoutX="272.0" layoutY="302.0" promptText="Enter your City" style="-fx-background-color: #b3ffff;" />
+      <TextField fx:id="firstname" layoutX="272.0" layoutY="169.0" promptText="Enter First Name " style="-fx-background-color: #b3ffff;" />
+      <TextField fx:id="age" layoutX="272.0" layoutY="260.0" promptText="Enter Age" style="-fx-background-color: #b3ffff;" />
+      <TextField fx:id="nicpass" layoutX="272.0" layoutY="347.0" promptText="Enter NIC/Passport no" style="-fx-background-color: #b3ffff;" />
+      <Label layoutX="159.0" layoutY="169.0" text="First Name">
+         <font>
+            <Font name="Maiandra GD" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="212.0" text="Last Name">
+         <font>
+            <Font name="Maiandra GD" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="260.0" text="Age">
+         <font>
+            <Font name="Maiandra GD" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="181.0" layoutY="302.0" text="City">
+         <font>
+            <Font name="Maiandra GD" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="347.0" text="NIC/Passport">
+         <font>
+            <Font name="Maiandra GD" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #b3ccff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.printReceipt">
+   <children>
+      <Pane layoutX="52.0" layoutY="51.0" prefHeight="431.0" prefWidth="496.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="131.0" layoutY="86.0" text="First Name -">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="132.0" layoutY="137.0" text="Last Name -">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="174.0" layoutY="181.0" text="Age -">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="175.0" layoutY="222.0" text="City -">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="119.0" layoutY="260.0" text="NIC/Passport -">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="printfirstname" layoutX="232.0" layoutY="86.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="printlastname" layoutX="232.0" layoutY="137.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="printage" layoutX="232.0" layoutY="181.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="printcity" layoutX="232.0" layoutY="222.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="printnicpass" layoutX="232.0" layoutY="260.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label layoutX="114.0" layoutY="310.0" text="Vaccine Type -">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label layoutX="151.0" layoutY="394.0" text="Date &amp; Time -" textFill="#1c00ff">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font></Label>
+            <Label fx:id="occupieddate" layoutX="234.0" layoutY="394.0" textFill="RED">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label layoutX="146.0" layoutY="-5.0" text="RECEIPT">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="select" layoutX="232.0" layoutY="310.0" textFill="RED">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Button fx:id="printbtn" layoutX="478.0" layoutY="509.0" mnemonicParsing="false" onAction="#printText" style="-fx-background-color: #80ffcc;" text="Print">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="backbtn" layoutX="52.0" layoutY="509.0" mnemonicParsing="false" onAction="#toHome" style="-fx-background-color: #80ffcc;" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
